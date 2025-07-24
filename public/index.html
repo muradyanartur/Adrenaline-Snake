@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adrenaline Snake</title>
+ <style>
+  body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+  }
+
+  canvas {
+    display: block;
+    margin: 20px auto 0;
+    background: #000;
+  }
+
+  #score {
+    font-size: 20px;
+    margin-top: 20px;
+    color: lime;
+  }
+
+  #tryAgain {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 470px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+</style>
+</head>
+<body>
+  <div id="score">Score: 0</div>
+  <canvas id="game" width="800" height="800"></canvas>
+  <button id="tryAgain">Try Again</button>
+  <script src="game.js"></script>
+</body>
+</html>
